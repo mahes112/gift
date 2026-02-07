@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our Love Story ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+/* PASSWORD */
+#passwordScreen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+input {
+  padding: 12px;
+  width: 260px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+button {
+  padding: 12px 30px;
+  border-radius: 25px;
+  border: none;
+  background: crimson;
+  color: white;
+  cursor: pointer;
+}
+
+/* COUNTDOWN */
+#countdownScreen {
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+
+/* CONTENT */
+#content {
+  display: none;
+}
+
+/* STORY SECTIONS */
+.section {
+  min-height: 100vh;
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+/* PROPOSAL */
+.proposal {
+  background: #120008;
+}
+
+.proposal-buttons {
+  margin-top: 40px;
+}
+
+.proposal-buttons button {
+  margin: 10px;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+}
+
+/* MUSIC */
+.music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+/* LOVE RESULT OVERLAY */
+#loveResult {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LOVE CARD */
+.love-card {
+  background: #1a0008;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  max-width: 350px;
+  box-shadow: 0 0 30px crimson;
+}
+
+.love-card h2 {
+  margin-bottom: 15px;
+  color: pink;
+}
+
+.love-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* FALLING HEARTS */
+.heart {
+  position: fixed;
+  top: -20px;
+  color: pink;
+  font-size: 20px;
+  animation: fall linear forwards;
+  z-index: 99;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- PASSWORD -->
+<div id="passwordScreen">
+  <h1>🔐 A story our hearts wrote together</h1>
+  <input type="password" id="password" placeholder="Enter the secret ❤️">
+  <button onclick="checkPassword()">Unlock</button>
+</div>
+
+<!-- COUNTDOWN -->
+<div id="countdownScreen">5</div>
+
+<!-- CONTENT -->
+<div id="content">
+
+  <div class="section">
+    <h1>Our Story Begins ❤️</h1>
+    <p>  It all began on a peaceful day near a temple. I was riding my bicycle with my cousins,
+         laughing and enjoying the moment, when I saw him for the first time. 
+         Yash was riding his bicycle with his friends. In that single glance, something changed inside me. 
+         I didn’t know how to explain it then, but my heart knew—it was love at first sight. 
+         I wanted to speak to him, but I hesitated. From that day on, I started coming to the temple every day,
+         not just out of devotion, but with the quiet hope of seeing him again</p>
+  </div>
+
+  <div class="section">
+    <h1>When Fate Stepped In</h1>
+    <p>
+      One unexpected day, Yash came and spoke to me and my cousins.
+      I was surprised, nervous, and happy all at once. I smiled and spoke back, 
+      and in that moment, a stranger slowly became a friend. We started talking more and sharing about our lives.
+      Soon, I discovered something unbelievable—we were studying in the same school,
+      living on the same street, and our houses were right opposite each other. 
+      It felt like fate had been quietly connecting us long before we realized it
+    </p>
+  </div>
+
+  <div class="section">
+    <h1>Love Finds Its Way</h1>
+    <p>
+      When school reopened, we began going to school together every day. 
+      Those simple walks became my favorite part of the day. One day, 
+      Yash gathered the courage to express his love and proposed to me. 
+      I already knew my feelings, but I wasn’t ready then, so I said no. Time passed,
+       emotions grew stronger, and on September 30, 2017, I finally listened to my heart and said yes. 
+       That was the day our love story truly began. We talked every day, shared dreams, 
+       and slowly fell deeper in love. Later, we planned to meet at a coffee shop. 
+       I went with my sister, feeling excited and nervous, and that day became one of my happiest memories. 
+       We laughed, talked, and captured our joy in countless selfies.
+    </p>
+  </div>
+
+  <div class="section">
+    <h1>A Love That Chose Forever</h1>
+    <p>
+     On October 11, 2022, my 18th birthday, Yash surprised me in the most beautiful way—he brought an eight-foot teddy bear, 
+     exactly my height. I was overwhelmed, and in that moment, all I could do was hug him tightly. 
+     Years passed, bringing challenges and patience, but our love never faded. 
+     Finally, on November 22, 2025, I gathered the courage to tell my parents about my love. 
+     Those two days were emotionally difficult, but love won. My parents accepted my story, trusted my choice, 
+     and decided to give my hand to the one who had always held my heart—Yash. 
+     What began with a single glance near a temple became a lifelong promise, and today, I carry this love into my forever
+    </p>
+  </div>
+
+  <div class="section proposal">
+    <h1>Every moment we’ve shared has led us here.
+        This story is ready to move forward,
+        waiting for one simple answer from you. 💍❤️</h1>
+    
+    <div class="proposal-buttons">
+      <button onclick="sayYes()">YES ❤️</button>
+      <button onclick="sayYes()">ALWAYS 💖</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- LOVE RESULT -->
+<div id="loveResult">
+  <div class="love-card">
+    <h2>❤️ மகேஸ் & யாஷ் ❤️</h2>
+    <p>
+      “ஒரு பார்வையில் பிறந்த காதல்,<br> 
+      என் வாழ்வை உன்னுடன் இணைத்தது"
+    </p>
+  </div>
+</div>
+
+
+
+<script>
+const correctPassword = "iloveyou"; // CHANGE THIS
+const passwordScreen = document.getElementById("passwordScreen");
+const countdownScreen = document.getElementById("countdownScreen");
+const content = document.getElementById("content");
+const music = document.getElementById("bgMusic");
+const loveResult = document.getElementById("loveResult");
+
+let playing = false;
+
+/* PASSWORD */
+function checkPassword() {
+  if (password.value === correctPassword) {
+    passwordScreen.style.display = "none";
+    startCountdown();
+  } else {
+    alert("Wrong password 💔");
+  }
+}
+
+/* COUNTDOWN */
+function startCountdown() {
+  countdownScreen.style.display = "flex";
+  let count = 5;
+  countdownScreen.textContent = count;
+
+  const timer = setInterval(() => {
+    count--;
+    countdownScreen.textContent = count;
+
+    if (count === 0) {
+      clearInterval(timer);
+      countdownScreen.style.display = "none";
+      content.style.display = "block";
+      music.play().catch(()=>{});
+    }
+  }, 1000);
+}
+
+/* MUSIC */
+function toggleMusic() {
+  if (!playing) {
+    music.play();
+    playing = true;
+  } else {
+    music.pause();
+    playing = false;
+  }
+}
+
+/* YES CLICK */
+function sayYes() {
+  loveResult.style.display = "flex";
+  startHearts();
+}
+
+/* HEART ANIMATION */
+function startHearts() {
+  setInterval(() => {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "❤️";
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = Math.random() * 20 + 15 + "px";
+    heart.style.animationDuration = Math.random() * 3 + 3 + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 6000);
+  }, 300);
+}
+</script>
+
+</body>
+</html>
